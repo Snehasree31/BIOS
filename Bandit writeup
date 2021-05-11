@@ -1,0 +1,42 @@
+Bandit 
+Level 0:
+	password:bandit0
+		Using ssh command login in to level 1.
+		Using ls list the files and check whether a file named readme, using cat read the readme file and password is obtained.
+Level 1:
+	password:boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+		Logout from that login and login as bandit1 using the above password.Using ls list the files in the home directory.We can see a file 			named '-', using cat open the file and password for next level is given.
+Level 2:
+	password:CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+		Logout and login as bandit2, ls the files and open the file using cat spaces\ in\ this\ filename.There we can obtain the password.
+Level 3:
+	password:UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+		Logout and login as bandit3, using ls we can find the directory inhere, and by using cd change directory to inhere and using ls -al we 			can get the hidden file in the directory, using cat command read .hidden file.Password is obtained.
+Level 4:
+	password:pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+		Logout and login as bandit4.Using ls command we can find inhere and change directory to inhere and using ls -al we can find there are 			10 files.Using file command find the file type and We checked for every file and found out only file07 is ASCII text and using cat 			command on ./-file07, password is obtained.
+Level 5:
+	password:koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+		Logout and login as bandit5.Using find command search with the conditions ,that is human redable using -type f -readable and not 			executable with ! -executable and size 1033.Then the file will be obtained and use cat and open the specified file.
+Level 6:
+	password:DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+		Logout and login as bandit6.Using find search for user bandit7 and group6 which specified size.Now while checking the file, we can 			find a file with specified conditions. Copy the lacation and using cat open the file.Password is obtained.
+Level 7:
+	password:HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+		Logout and login as bandit7.Using cat and grep function display the line that contain 'millionth' and hence the password is obtained. 
+Level 8:
+	password:cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+		Logout and login as bandit8.Using sort and uniq command identify the unique line, that is 'sort data.txt|uniq -u ' will give the 			password for the next level.
+Level 9:
+	password:UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+		Logout and login as bandit9.We can use cat as the is some non- human readable data and hence we use string command to get all the 			human-redable data and using grep can find all the strings with '='.Now we obtain the password. 
+Level 10:
+	password:truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+		
+
+
+
+
+
+
+
