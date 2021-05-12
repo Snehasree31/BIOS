@@ -1,0 +1,57 @@
+CTF CHALLANGE SOLUTION 
+
+
+1.Native Cipher
+   
+   The given encoding is to be cipher encoded and hence using online ceaser cipher encoder the encoded sting was     
+    decoded and got the flag.Here ascii value of d + 5 gives i. By taking 5 as the key the flag is obtained. 
+
+2. Single byte XOR
+
+    The given encoded string is xor ed with ‘z’ by using the following python code.
+   
+         
+enc=bytes.fromhex('1314190e1c1001024a0825194e145d0e251849251f4e091316032518084a11491407').decode('utf-8')
+f= ""
+for i in range (len(enc)):
+    f+=chr(ord(enc[i])^ord('z'))
+print(f)
+
+And hence the flag is obtained.
+
+
+3. base-base-base
+
+    The given string inside the txt file was first converted using base64 decoder and hence hence obtained a similar string   
+    which is similar to the given string was obtained. Then using base32 converted to hex and this hex is then converted    
+    to a string and the flag is obtained.
+
+
+4. Multiple encoder
+
+     There are two files given, a txt and a python program, while going through the python file we can observe that the txt 
+     file is obatined when a string “x” was runned in the python program. So reversing the action will give us the “x” and 
+     hence the sting in txt was first decoded to a string and now this string is decoded with base64 online converter. This 
+     process is repeated 5 times as 5 is mentioned in the python program and hence we find the flag which is the “x” file.
+
+5. Con-the-Cat
+
+    The given file is a png file, and hence on extracting it using foremost command we can obtain a file that contain 4 jpg  
+    files and these one png file. Among the 4 jpg files one is the flag.
+
+6. Snow Man
+ 
+    As it is mentioned in the name of the challange “snow”, using stegsnow encryption tool on the file flag.txt with the 
+    password “thisiseasy” which we obtained from the file flag.txt. We get an base64 string and this is decoded using 
+    base64 decoder and finaly we obtain the flag.
+
+7. Mischief Kid
+ 
+    The given file is a zip file and this file is extracted and a new file is obtained which contains a jpg file and this jpg file   
+    is extracted using foremost command and we get a zip file inside that, extract it will give two files a flag.txt and  
+    busted.png. Opening busted.png in ghex ,there is an error in the hex code of the png file, using instert the code was 
+    corrected and saved, now when we open busted.png file the flag is obtained. 
+
+8. Angry Steve
+
+    Only a .jpg file is given, usings strings Angry.jpg command we get the hidden flag in it.
